@@ -14,8 +14,8 @@ var keystone = require('keystone'),
 
 keystone.init({
 
-	'name': 'aburasoba',
-	'brand': 'aburasoba',
+	'name': 'abura-soba-blog',
+	'brand': 'abura-soba-blog',
 
 	'less': 'public',
 	'static': 'public',
@@ -37,7 +37,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': 'g(rUHAW,1%h(PRTK])}^CxqCxX5xJDuh=C}l)z8"1%DDl(Rq@K807NvoWu4y9Uc-'
+	'cookie secret': 'S`3556+Gt3rG6R?r@Q48q=h?Fq;*vN<)L^M7Z&KnhOOJP?hCc]T$WIT:;cxh|J8X'
 
 });
 

@@ -46,10 +46,10 @@ Enquiry.schema.methods.sendNotificationEmail = function(callback) {
 		new keystone.Email('enquiry-notification').send({
 			to: admins,
 			from: {
-				name: 'aburasoba',
-				email: 'contact@aburasoba.com'
+				name: 'abura-soba-blog',
+				email: 'contact@abura-soba-blog.com'
 			},
-			subject: 'New Enquiry for aburasoba',
+			subject: 'New Enquiry for abura-soba-blog',
 			enquiry: enqiury
 		}, callback);
 		
