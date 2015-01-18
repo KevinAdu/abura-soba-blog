@@ -1,6 +1,6 @@
 #header {
 	padding-top: 30px;
-	background-color: @brand-primary;
+	#gradient.vertical(lighten(@brand-primary, 5%), darken(@brand-primary, 5%), 0%, 100%);
 
 	.header-area {
 		padding: 0 0 20px 0;
@@ -8,8 +8,11 @@
 
 	.container {
 
+		padding: 0;
+
 		.logo {
 			
+			margin-left: 15px;
 			font-size: 44px;
 			line-height: 48px;
 			font-family: Oswald, Helvetica;
@@ -21,7 +24,10 @@
 		}
 
 		.navbar {
-			/*#gradient.vertical(lighten(#B38200, 10%), #B38200, 0%, 100%);*/
+			
+			#gradient.vertical(lighten(@navbar-default-bg, 5%), @navbar-default-bg, 0%, 100%);
+			border: none;
+
 			.container-fluid {
 				padding: 0;
 
@@ -30,7 +36,6 @@
 				}
 			}
 			margin: 0;
-			border: none;
 		}
 	}
 }

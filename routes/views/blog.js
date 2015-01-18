@@ -62,8 +62,8 @@ exports = module.exports = function(req, res) {
 		
 		var q = keystone.list('Post').paginate({
 				page: req.query.page || 1,
-				perPage: 10,
-				maxPages: 10
+				perPage: 8,
+				maxPages: 7
 			})
 			.where('state', 'published')
 			.sort('-publishedDate')
@@ -72,12 +72,15 @@ exports = module.exports = function(req, res) {
 		if (locals.data.category) {
 			q.where('categories').in([locals.data.category]);
 		}
+
+		keystone.list('Post').model.find().exec(function(err, results) {
+			console.log(results);
+		});
 		
 		q.exec(function(err, results) {
 			locals.data.posts = results;
 			next(err);
 		});
-		
 	});
 	
 	// Render the view

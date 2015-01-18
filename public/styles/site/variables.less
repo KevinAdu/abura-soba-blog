@@ -3,11 +3,17 @@
 
 //Scaffolding
 @brand-primary: #E6A700;
+@brand-secondary: #676767;
 @link-color: #0038E6;
 
 //Navbar
-@navbar-default-bg: #B38200;
+@navbar-default-bg: @brand-secondary;
 @navbar-default-link-color:                #fff;
 @navbar-default-link-hover-color:          #fff;
 @navbar-default-link-active-color:         #fff;
-@navbar-default-link-hover-bg: #66531F;
+@navbar-default-link-hover-bg: lighten(@brand-secondary, 10%);
+
+@btn-primary-bg: @brand-secondary;
+
+@pagination-active-bg:                 @brand-secondary;
+@pagination-active-border:             @brand-secondary;
