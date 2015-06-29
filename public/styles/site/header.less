@@ -1,38 +1,36 @@
-#header {
+header {
 	#gradient.vertical(lighten(@brand-primary, 5%), darken(@brand-primary, 5%), 0%, 100%);
 
 	.container {
 		padding: 0;
 
-		.logo {
-			margin: 30px 0 30px 15px;
-			font-size: 53px;
-			line-height: 48px;
-			font-family: Oswald, Helvetica;
-			color: #fff;
+			.logo {
+				font-family: Oswald, Helvetica;
+				margin: 30px 0;
+				min-width: 40%;
+				display: inline-block;
 
-			.img {
-				height: 2em;
-				background: url(../images/abu-kun-logo.png) no-repeat;
-				background-size: contain;
+				img {
+					height: 127px;
+					background-size: contain;
+					vertical-align: baseline;	
+
+				}
+
+				h1 {
+					color: #fff;
+					line-height: 70px;
+					font-size: 65px;
+					display: inline-block;
+				}
 			}
-		}
 
-		.navbar {
+		nav {
 			#gradient.vertical(lighten(@navbar-default-bg, 5%), @navbar-default-bg, 0%, 100%);
 			border: none;
 			border-radius:3px 3px 0 0;
 			border-top: solid 1px darken(@brand-secondary, 10%);
 			box-shadow: inset 0px 1px 0 lighten(@brand-secondary, 20%);
-
-			.container-fluid {
-				padding: 0;
-
-				.navbar-collapse {
-					padding: 0;
-				}
-			}
-
 			margin: 0;
 		}
 	}

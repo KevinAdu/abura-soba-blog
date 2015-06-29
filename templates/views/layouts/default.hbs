@@ -23,44 +23,32 @@
 
 		</head>
 		<body>
-			<div id="header">
+			<header>
 				<div class="container">
-					<div class="header-area row">
-						<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-						</button>
-						<div class="col-md-2 logo">
-							<a href="/">
-								<div class="img"></div>
-							</a>
-						</div>
-						<div class="col-md-3 logo">
-							Abura Soba Blog
-						</div>
-						<!-- Add Logo and name of site on the right of it -->
+					<div class="row">
+						<a class="logo" href="/">
+							<img src="../images/abu-kun-logo.png" alt="Abura Soba Mania">
+							<h1>Abura Soba <br> Mania</h1>
+						</a>
 					</div>
-					<div role="navigation" class="row navbar navbar-default">
-						<div class="container-fluid">
-							<div class="collapse navbar-collapse">
-								<ul class="nav navbar-nav navbar-left">
-									{{# each navLinks}}
-									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-										<a href="{{ href }}">{{ label }}</a>
-									</li>
-									{{/each}}
-								</ul>
-							<!-- <ul class="nav navbar-nav navbar-right">
-								{{#if user}}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-								{{else}}
-								<li><a href="/keystone/signin">Sign In</a></li>
-								{{/if}}
-							</ul> -->
-						</div>
-					</div>
+					<nav role="navigation" class="row navbar navbar-default">
+						<ul class="nav navbar-nav navbar-left">
+							{{# each navLinks}}
+							<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+								<a href="{{ href }}">{{ label }}</a>
+							</li>
+							{{/each}}
+						</ul>
+						<!-- <ul class="nav navbar-nav navbar-right">
+							{{#if user}}
+							<li><a href="/keystone/signout">Sign Out</a></li>
+							{{else}}
+							<li><a href="/keystone/signin">Sign In</a></li>
+							{{/if}}
+						</ul> -->
+					</nav>
 				</div>
-			</div>
+			</header>
 		</div>
 		<div id="body">
 			<!--
