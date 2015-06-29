@@ -1,55 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Abura Soba Blog</title>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link href='http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link href="/styles/normalize.css" rel="stylesheet">
-	<link href="/styles/site.min.css" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Abura Soba Blog</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link href='http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="/styles/normalize.css" rel="stylesheet">
+		<link href="/styles/site.min.css" rel="stylesheet">
 
-		{{!-- This file provides the default styling for the KeystoneJS Content Editor 
-		- only renders when user is logged in and admin--}}
-		{{{isAdminEditorCSS user}}}
-		
-		{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
-		//- Safely remove this block if you are not targeting IE8 --}}
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" />
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" />
-			<![endif]-->
-
-		</head>
-		<body>
-			<header>
-				<div class="container">
-					<div class="row">
-						<a class="logo" href="/">
-							<img src="../images/abu-kun-logo.png" alt="Abura Soba Mania">
-							<h1>Abura Soba <br> Mania</h1>
-						</a>
-					</div>
-					<nav role="navigation" class="row navbar navbar-default">
-						<ul class="nav navbar-nav navbar-left">
-							{{# each navLinks}}
-							<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-								<a href="{{ href }}">{{ label }}</a>
-							</li>
-							{{/each}}
-						</ul>
-						<!-- <ul class="nav navbar-nav navbar-right">
-							{{#if user}}
-							<li><a href="/keystone/signout">Sign Out</a></li>
-							{{else}}
-							<li><a href="/keystone/signin">Sign In</a></li>
-							{{/if}}
-						</ul> -->
-					</nav>
-				</div>
-			</header>
-		</div>
+			{{!-- This file provides the default styling for the KeystoneJS Content Editor 
+			- only renders when user is logged in and admin--}}
+			{{{isAdminEditorCSS user}}}
+			
+			{{!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+			//- Safely remove this block if you are not targeting IE8 --}}
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" />
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" />
+				<![endif]-->
+	</head>
+	<body>
+		<header>
+			<a class="logo" href="/">
+				<img src="../images/abu-kun-logo.png" alt="Abura Soba Mania">
+				<h1>Abura Soba <br> Mania</h1>
+			</a>
+			<nav role="navigation" class="navbar navbar-default">
+				<ul class="nav navbar-nav navbar-left">
+					{{# each navLinks}}
+					<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+						<a href="{{ href }}">{{ label }}</a>
+					</li>
+					{{/each}}
+				</ul>
+			<!-- <ul class="nav navbar-nav navbar-right">
+				{{#if user}}
+				<li><a href="/keystone/signout">Sign Out</a></li>
+				{{else}}
+				<li><a href="/keystone/signin">Sign In</a></li>
+				{{/if}}
+			</ul> -->
+			</nav>
+		</header>
+	
 		<div id="body">
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
@@ -81,26 +76,17 @@
 			{{/if}}
 			<!-- The content block should contain the body of your template's content-->
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-8 col-md-9 body">
-						{{{body}}}
+				<section class="col-sm-8 col-md-9 body">
+					{{{body}}}
+				</section>
+				<aside class="col-sm-4 col-md-3 sidebar">
+					<div class="item">
+						<h4 class="item-label">About Us</h4>
+						<p class="item">We all know what you're thinking. "Another Japanese food blog?!". Well why not, we are expats in Tokyo after all. But this is Abura Soba, the most underrated dish in Japan. Our job is to give it some love! <span>More About Us</span></p>
 					</div>
-					<div class="col-sm-4 col-md-3 sidebar">
-						<div class="item">
-							<h4 class="item-label">About Us</h4>
-							<p class="item">We all know what you're thinking. "Another Japanese food blog?!". Well why not, we are expats in Tokyo after all. But this is Abura Soba, the most underrated dish in Japan. Our job is to give it some love! <span>More About Us</span></p>
-						</div>
-					</div>
-				</div>
+				</aside>
 			</div>
-		</div>
-	</div>
-</div>
-<div class="container">
-	<div id="footer">
-		<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
-	</div>
-</div>
+		<footer></footer>
 		{{!--
 			//- jQuery 1.11.1 is included by default, and required by both Bootstrap
 			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
@@ -113,5 +99,5 @@
 			--}}
 			<script src="/js/lib/bootstrap/bootstrap-3.2.0.min.js"></script>
 			{{{isAdminEditorJS user}}}
-		</body>
-		</html>
+	</body>
+</html>
