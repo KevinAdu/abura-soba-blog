@@ -1,14 +1,10 @@
 <article>
 	<p><a href="/blog">&larr; back to the blog</a></p>
-	<header>
 		<h2>{{data.post.title}}</h2>
 		<h5>
 			{{{categoryList data.post.categories prefix="Posted in "}}}
 			{{#if author.name.first}}by {{author.name.first}}{{/if}}
 		</h5>
-	</header>
-	<div class="post">
 		{{{data.post.content.extended}}}
-	</div>
 </article>
 
