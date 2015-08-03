@@ -1,34 +1,50 @@
 .primary-header {
-	#gradient.vertical(lighten(@brand-primary, 5%), darken(@brand-primary, 5%), 0%, 100%);
+	//#gradient.vertical(lighten(@brand-primary, 5%), darken(@brand-primary, 5%), 0%, 100%);
+	background-color: #333;
 	margin-bottom: 50px;
+	width: 100%;
+	padding-top: 25px;
 
 	.logo {
-		font-family: Oswald, Helvetica;
-		min-width: 40%;
+		margin:0 0 20px 38px;
 		display: inline-block;
-		margin: 30px 40px; 
+		height: 100%;
 
 		img {
-			height: 127px;
 			background-size: contain;
-			vertical-align: baseline;	
-
+			vertical-align: middle;
+			height: 10em;
+			width: 9em;
+			margin: 0 10px;
 		}
 
-		h1 {
+		.title {
+			vertical-align: middle;
 			color: #fff;
-			line-height: 70px;
-			font-size: 65px;
+			font-size: 2.8em;
+			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 1.5em;
 			display: inline-block;
+			letter-spacing: 0.1em;
+
+		    span {
+		    	font-size: 2em;
+		    	letter-spacing: 0.1em;
+		    	margin: 0 -4px;
+		    }
 		}
 	}
 
 	nav {
-		#gradient.vertical(lighten(@navbar-default-bg, 5%), @navbar-default-bg, 0%, 100%);
+		//#gradient.vertical(lighten(@navbar-default-bg, 5%), @navbar-default-bg, 0%, 100%);
+		background-color: #333;
 		border: none;
 		border-radius:3px 3px 0 0;
-		border-top: solid 1px darken(@brand-secondary, 10%);
-		box-shadow: inset 0px 1px 0 lighten(@brand-secondary, 20%);
+		color: #fff;
+		font-size: 1.3em;
+		//border-top: solid 1px darken(@brand-secondary, 10%);
+		//box-shadow: inset 0px 1px 0 lighten(@brand-secondary, 20%);
 		// margin: 0;
 	}
 }

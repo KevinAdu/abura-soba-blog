@@ -24,11 +24,13 @@
 	<body>
 		<header class="primary-header">
 			<a class="logo" href="/">
-				<img src="../images/abu-kun-logo.png" alt="Abura Soba Mania">
-				<h1>Abura Soba <br> Mania</h1>
+				<img src="../images/abu-kun-logo.png" alt="Abura Soba Mania Mascot - Abu-kun"/>
+				<p class="title">Abura Soba <br> 
+					<span>Mania </span>
+				</p>
 			</a>
-			<nav role="navigation" class="navbar navbar-default">
-				<ul class="nav navbar-nav navbar-left">
+			<nav role="navigation">
+				<ul class="nav nav-pills nav-justified">
 					{{# each navLinks}}
 					<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
 						<a href="{{ href }}">{{ label }}</a>
