@@ -26,10 +26,10 @@
 			<a class="logo" href="/">
 				<img src="../images/abu-kun-logo.png" alt="Abura Soba Mania Mascot - Abu-kun"/>
 				<p class="title">Abura Soba <br> 
-					<span>Mania </span>
+					<span class="slogan-large">Mania </span>
 				</p>
 			</a>
-			<nav role="navigation">
+			<nav role="navigation" class="primary-nav">
 				<ul class="nav nav-pills nav-justified">
 					{{# each navLinks}}
 					<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
@@ -37,13 +37,13 @@
 					</li>
 					{{/each}}
 				</ul>
-			<!-- <ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right">
 				{{#if user}}
 				<li><a href="/keystone/signout">Sign Out</a></li>
 				{{else}}
 				<li><a href="/keystone/signin">Sign In</a></li>
 				{{/if}}
-			</ul> -->
+			</ul>
 			</nav>
 		</header>
 	

@@ -1,1 +1,21 @@
 {{!< default}}
+	{{# each data.posts.results}}
+	<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="{{image.url}}" class="img-responsive"/>
+			</div>
+			<div class="col-md-8 brief">
+				<h2>
+					<a href="{{postUrl slug}}">{{{title}}}</a>
+					<span class="lead text-muted">
+						{{{categoryList categories prefix="Posted in "}}}
+					</span>
+				</h2>
+				{{{content.brief}}}
+				<a class="btn btn-primary" href="{{postUrl slug}}">Read more</a>		
+			</div>
+		</div>
+	</div>
+	{{/each}}
+	{{>pagination}}
