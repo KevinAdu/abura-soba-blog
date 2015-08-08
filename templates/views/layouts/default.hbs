@@ -22,10 +22,11 @@
 				<![endif]-->
 	</head>
 	<body>
-		<header class="primary-header">
+		<div class="container-fluid">
+		<header class="row primary-header">
 			<a class="logo" href="/">
-				<img src="../images/abu-kun-logo.png" alt="Abura Soba Mania Mascot - Abu-kun"/>
-				<p class="title">Abura Soba <br> 
+				<img class="col-md-4 img-responsive" src="../images/abu-kun-logo.png" alt="Abura Soba Mania Mascot - Abu-kun"/>
+				<p class="title col-md-6">Abura Soba <br> 
 					<span class="slogan-large">Mania </span>
 				</p>
 			</a>
@@ -37,13 +38,13 @@
 					</li>
 					{{/each}}
 				</ul>
-			<ul class="nav navbar-nav navbar-right">
+{{!-- 			<ul class="nav navbar-nav navbar-right">
 				{{#if user}}
 				<li><a href="/keystone/signout">Sign Out</a></li>
 				{{else}}
 				<li><a href="/keystone/signin">Sign In</a></li>
 				{{/if}}
-			</ul>
+			</ul> --}}
 			</nav>
 		</header>
 	
@@ -78,10 +79,10 @@
 			{{/if}}
 			<!-- The content block should contain the body of your template's content-->
 			<div class="container">
-				<section class="col-sm-8 col-md-9 body">
+				<section class="col-md-9 body">
 					{{{body}}}
 				</section>
-				<aside class="col-sm-4 col-md-3 sidebar">
+				<aside class="col-md-3 sidebar">
 					<div class="item">
 						<h4 class="item-label">About Us</h4>
 						<p class="item">We all know what you're thinking. "Another Japanese food blog?!". Well why not, we are expats in Tokyo after all. But this is Abura Soba, the most underrated dish in Japan. Our job is to give it some love! <span>More About Us</span></p>
@@ -89,6 +90,7 @@
 				</aside>
 			</div>
 		<footer></footer>
+		</div>
 		{{!--
 			//- jQuery 1.11.1 is included by default, and required by both Bootstrap
 			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
