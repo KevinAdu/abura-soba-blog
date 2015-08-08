@@ -5,27 +5,43 @@ footer {
 	color: @gray-light;
 }
 
-.gallery-image img{
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
+.post {
+	padding-bottom: 25px;
+	margin: 30px;
+	padding: 15px 0 15px 30px;
 
-.posts {
-	.post {
-		padding-bottom: 25px;
+	.post-title {
+		display: inline-block;
+		padding-right: 10px;
+		vertical-align: top;
+		line-height: 30px;
 
-		.brief {
-			p {
-				height: 7.3em;
-				overflow: hidden;	
-			}
+		a {
+			display: inline-block;
 		}
+	}
 
-		img {
-			height: 180px;
-		}	
-	}	
+	p {
+		margin-top: 12px;
+		max-height: 180px;
+		overflow: hidden;	
+	}
+
+	img {
+		height: 160px;
+	}
+
+	.rating {
+		display: inline-block;
+		vertical-align: top;
+		height: 30px;
+
+		.star {
+			font-size: 30px;
+			line-height: 30px;
+		}
+	}
+
 }
 
 
@@ -42,8 +58,4 @@ html, body {
 	height: 100%;
 }
 
-.center {
-    display:table-cell;
-    vertical-align:middle;
-    float:none;
-}
+

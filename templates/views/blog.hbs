@@ -2,18 +2,20 @@
 	{{# each data.posts.results}}
 	<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<img src="{{image.url}}" class="img-responsive"/>
 			</div>
 			<div class="col-md-8 brief">
-				<h2>
+				<h2 class="post-title">
 					<a href="{{postUrl slug}}">{{{title}}}</a>
-					<span class="lead text-muted">
-						{{{categoryList categories prefix="Posted in "}}}
-					</span>
 				</h2>
+				<div class="rating">
+					<span class="star">&#9734;</span><span class="star">&#9734;</span><span class="star">&#9734;</span><span class="star">&#9734;</span><span class="star">&#9734;</span>
+				</div>
+				<h5 class="info"><span class="lead">Location: </span> Shibuya</h4>
+				<h5 class="info"><span class="lead">Date Posted: </span> 23/02/2014</h4>
 				{{{content.brief}}}
-				<a class="btn btn-primary" href="{{postUrl slug}}">Read more</a>		
+				<a class="muted" href="{{postUrl slug}}">Read more</a>		
 			</div>
 		</div>
 	</div>
