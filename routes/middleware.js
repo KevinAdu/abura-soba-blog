@@ -26,10 +26,10 @@ exports.initLocals = function(req, res, next) {
 	var locals = res.locals;
 	
 	locals.navLinks = [
-		{ label: 'What is Abura Soba?',		key: 'whatis',		href: '/abura' },
+		{ label: 'Home',					key: 'home',		href: '/' },
 		{ label: 'Reviews',					key: 'blog',		href: '/blog' },
 		{ label: 'Contact Us', 				key: 'contact',		href: '/contact' },
-		{ label: 'About Us',				key: 'contact',		href: '/contact' }
+		{ label: 'About Us',				key: 'about',		href: '/about' }
 	];
 	
 	locals.user = req.user;
