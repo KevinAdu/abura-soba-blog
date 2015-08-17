@@ -38,14 +38,7 @@ keystone.init({
 	'user model': 'User',
 	'cookie secret': 'S`3556+Gt3rG6R?r@Q48q=h?Fq;*vN<)L^M7Z&KnhOOJP?hCc]T$WIT:;cxh|J8X',
 	'wysiwyg importcss': '/styles/site.min.css',
-	'wysiwyg additional plugins': 'example, table, advlist, anchor,'
- +  'autolink, autosave, bbcode, charmap, contextmenu, '
- +  'directionality, emoticons, fullpage, hr, media, pagebreak,'
- +  'paste, preview, print, searchreplace, textcolor,'
- +  'visualblocks, visualchars, wordcount',
- 	'wysiwyg additional options': {
- 		forced_root_block: 'p'
- 	}
+	'wysiwyg cloudinary images': true
 });
 
 keystone.set('cloudinary config', { cloud_name: 'dz8vyplpm', api_key: '519588533491653', api_secret: '86nZ8SIOl1gW5wQwzOoHIM2fSLo' });

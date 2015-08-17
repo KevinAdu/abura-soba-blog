@@ -1,10 +1,8 @@
 <article>
 	<p><a href="/blog">&larr; back to the blog</a></p>
 		<h2>{{data.post.title}}</h2>
-		<h5>
-			{{{categoryList data.post.categories prefix="Posted in "}}}
-			{{#if author.name.first}}by {{author.name.first}}{{/if}}
-		</h5>
+		<h4><span class="muted">Address: </span>3-26-5, Nakano-ku, Tokyo, Japan 120-7473</h4>
+		<h4><span class="muted">Posted: </span>{{date publishedDate format='DD MMM YYYY'}}</h4>
 		{{{data.post.content.extended}}}
 </article>
 
