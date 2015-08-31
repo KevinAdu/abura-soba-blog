@@ -14,8 +14,8 @@ var keystone = require('keystone'),
 
 keystone.init({
 
-	'name': 'abura-soba-blog',
-	'brand': 'abura-soba-blog',
+	'name': 'abura-soba-mania',
+	'brand': 'abura-soba-mania',
 
 	'less': 'public',
 	'static': 'public',
@@ -38,7 +38,9 @@ keystone.init({
 	'user model': 'User',
 	'cookie secret': 'S`3556+Gt3rG6R?r@Q48q=h?Fq;*vN<)L^M7Z&KnhOOJP?hCc]T$WIT:;cxh|J8X',
 	'wysiwyg importcss': '/styles/site.min.css',
-	'wysiwyg cloudinary images': true
+	'wysiwyg cloudinary images': true,
+	'paste_remove_styles': true,
+	'wysiwyg additional plugins': 'paste'
 });
 
 keystone.set('cloudinary config', { cloud_name: 'dz8vyplpm', api_key: '519588533491653', api_secret: '86nZ8SIOl1gW5wQwzOoHIM2fSLo' });
