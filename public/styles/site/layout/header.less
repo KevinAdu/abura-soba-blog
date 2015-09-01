@@ -1,27 +1,35 @@
 .primary-header {
-	//#gradient.vertical(lighten(@brand-primary, 5%), darken(@brand-primary, 5%), 0%, 100%);
 	background-color: #333;
-	margin-bottom: 48px;
-	padding-top: 24px;
+	height: 7rem;
+	padding: 0 20px; //Find size of the gutter
 
 	.logo {
-		margin:0 0 18px 36px;
 		display: inline-block;
-		height: 100%;
 
 		img {
 			background-size: contain;
-			// vertical-align: middle; When using grid
 			height: 96px;
 		}
 
 		.title {
-			// vertical-align: middle;
-			color: #fff;
 			display: inline-block;
-			font-size: 2em;
-			line-height: 1em;
-			font-weight: 200;
+			line-height: 7rem;
 		}
 	}
+
+	.primary-nav {
+		background-color: #333;
+		border: none;
+		border-radius:3px 3px 0 0;
+		color: #fff;
+		font-size: 1.3em;
+		display: inline;
+		float: right;
+		line-height: 7rem;
+
+		a {
+			padding: 0 10px; //Use spacing from ratio	
+		}
+		
+	}	
 }

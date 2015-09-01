@@ -26,14 +26,12 @@
 		<header class="row primary-header">
 			<a class="logo" href="/">
 				{{!-- <img class="col-md-4 img-responsive" src="../images/abu-kun-logo.png" alt="Abura Soba Mania Mascot - Abu-kun"/> --}}
-				<h1 class="title">Abura Soba <br> 
-					Mania
-				</h1>
+				<h1 class="title">Abura Soba Mania</h1>
 			</a>
 			<nav role="navigation" class="primary-nav">
-				<ul class="nav nav-pills nav-justified">
+				<ul class="nav nav-pills">
 					{{# each navLinks}}
-					<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+					<li>
 						<a href="{{ href }}">{{ label }}</a>
 					</li>
 					{{/each}}
