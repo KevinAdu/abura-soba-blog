@@ -1,41 +1,58 @@
 .post {
-	padding-bottom: 25px;
-	// margin: 30px;
-	// padding: 15px 0 15px 30px;
+
+	margin-bottom: 2rem;
 
 	.post-title {
 		display: inline-block;
-		padding-right: 10px;
+		padding-right: 1rem;
 		vertical-align: top;
-		line-height: 30px;
-
+		line-height: 1.875rem;
+		margin-bottom: 0.95rem;
+		display: inline-block;
+		
 		a {
-			display: inline-block;
+			color: @text-default-color;	
 		}
+		
 	}
 
 	p {
-		margin-top: 12px;
-		max-height: 180px;
+		margin-top: 1.45rem;
+		margin-bottom: 0.95rem;
+		max-height: 10rem;
 		overflow: hidden;	
 	}
 
-	.brief_content {
-		color: blue;
+	.info {
+				color: @text-default-color;
+		
+		.location {
+			display: inline-block;
+			padding-right: 0.95rem;	
+		}	
+
 	}
 
-	img {
-		height: 160px;
+	
+
+	.preview-image {
+		height: 11rem;
+	}
+
+	.read-more {
+		float: right;
+		font-size: 0.85rem;
 	}
 
 	.rating {
 		display: inline-block;
 		vertical-align: top;
-		height: 30px;
+		height: 1.875rem;
 
 		.star {
-			font-size: 30px;
-			line-height: 30px;
+			font-size: 1.875rem;
+			line-height: 1.875rem;
+			color: @brand-primary;
 		}
 	}
 
