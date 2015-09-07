@@ -11,11 +11,11 @@
 					<a href="{{postUrl slug}}">{{{title}}}</a>
 				</h2>
 				<div class="rating">
-					<span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+					{{{ratingStars totalRating}}}
 				</div>
 				<h5 class="info">
-					Found in <span class="location">Shibuya</span>
-					From <span class="price">1000 yen</span>
+					Found in <span class="location">{{restaurantLocation.suburb}}</span>
+					From <span class="price">{{minimumPrice}} yen</span>
 				</h5>
 				{{{content.brief}}}
 				<a class="read-more" href="{{postUrl slug}}">Read more</a>		

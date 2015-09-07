@@ -243,6 +243,17 @@ module.exports = function() {
 	_helpers.categoryUrl = function(categorySlug, options) {
 		return ('/blog/' + categorySlug);
 	};
+
+	//iterates over the rating to create the rating stars
+	_helpers.ratingStars = function(totalRating, options){
+		var html ='';
+
+		for (var i = 0; i < totalRating; i++) {
+			html += '<span class="star">&#9733;</span>\n';
+		}
+
+		return html;
+	}
 	
 	// ### Pagination Helpers
 	// These are helpers used in rendering a pagination system for content

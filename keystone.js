@@ -40,7 +40,10 @@ keystone.init({
 	'wysiwyg importcss': '/styles/site.min.css',
 	'wysiwyg cloudinary images': true,
 	'paste_remove_styles': true,
-	'wysiwyg additional plugins': 'paste'
+	'wysiwyg additional plugins': 'paste',
+	'google api key': 'AIzaSyCTRUpRzGQLGsmPU_xftzJa0nFC5Aw44JM',
+	'google server api key': 'AIzaSyCbRWRuOhw0K7jVGjYVFgp6NHgKIC-uvLs',
+	'default region': 'JP'
 });
 
 keystone.set('cloudinary config', { cloud_name: 'dz8vyplpm', api_key: '519588533491653', api_secret: '86nZ8SIOl1gW5wQwzOoHIM2fSLo' });
