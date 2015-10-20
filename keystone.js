@@ -39,6 +39,7 @@ keystone.init({
 	'cookie secret': 'S`3556+Gt3rG6R?r@Q48q=h?Fq;*vN<)L^M7Z&KnhOOJP?hCc]T$WIT:;cxh|J8X',
 	'wysiwyg importcss': '/styles/site.min.css',
 	'wysiwyg cloudinary images': true,
+	'port': 4000,
 	'paste_remove_styles': true,
 	'wysiwyg additional plugins': 'paste',
 	'google api key': 'AIzaSyCTRUpRzGQLGsmPU_xftzJa0nFC5Aw44JM',
