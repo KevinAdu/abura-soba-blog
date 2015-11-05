@@ -6,7 +6,6 @@
 
 exports.create = {
 	User: [
-		{ 'name.first': 'Admin', 'name.last': 'User', email: 'kevyugi@gmail.com', password: 'FGg7$rsn', isAdmin: true }
 	]
 };
 
