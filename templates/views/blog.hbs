@@ -3,22 +3,24 @@
 	<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
 		<div class="row">
 			<div class="col-md-4">
-				<img src="{{image.url}}" class="img-responsive"/>
+				<img src="{{image.url}}" class="img-responsive preview-image"/>
 			</div>
 			<div class="col-md-8 brief">
 				<h2 class="post-title">
 					<a href="{{postUrl slug}}">{{{title}}}</a>
 				</h2>
 				<div class="rating">
-					<span class="star">&#9734;</span><span class="star">&#9734;</span><span class="star">&#9734;</span><span class="star">&#9734;</span><span class="star">&#9734;</span>
+					{{{ratingStars totalRating}}}
 				</div>
-				<h5 class="info"><span class="lead">Location: </span> Shibuya</h4>
-				<h5 class="info"><span class="lead">Date Posted: </span>{{date publishedDate format='DD MMM YYYY'}}</h4>
+				<h5 class="info">
+					Found in <span class="location">{{restaurantLocation.suburb}}</span>
+					From <span class="price">{{minimumPrice}} yen</span>
+				</h5>
 				{{{content.brief}}}
-				<a class="muted" href="{{postUrl slug}}">Read more</a>		
+				<a class="read-more" href="{{postUrl slug}}">Read more</a>		
 			</div>
 		</div>
 	</div>
-	{{/each}}
+{{/each}}
 	{{>pagination}}
 </div>
